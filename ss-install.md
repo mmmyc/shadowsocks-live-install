@@ -30,7 +30,7 @@ wget https://github.com/madeye/shadowsocks-libev/archive/master.zip
 unzip master.zip
 # 开始编译
 cd shadowsocks-libev*
-./configure --prefix=/usr && make
+./configure && make
 make install
 # 准备必须的文件
 mkdir -p /etc/shadowsocks
