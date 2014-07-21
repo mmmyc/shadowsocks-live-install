@@ -1,4 +1,4 @@
-Debian
+**Debian**
 ```
 cd /tmp
 # 下载源码
@@ -19,7 +19,7 @@ vim /etc/shadowsocks/config.json
 service shadowsocks start
 ```
 
-CentOS
+**CentOS**
 ```
 cd /tmp
 # 下载源码
