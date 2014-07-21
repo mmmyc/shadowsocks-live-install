@@ -22,10 +22,14 @@ service shadowsocks start
 **CentOS**
 ```
 cd /tmp
+# 编译环境准备&安装依赖包
+yum install -y gcc automake autoconf libtool make build-essential autoconf libtool
+yum install -y curl curl-devel zlib-devel openssl-devel perl perl-devel cpio expat-devel gettext-devel
 # 下载源码
-git clone https://github.com/madeye/shadowsocks-libev.git
+wget https://github.com/madeye/shadowsocks-libev/archive/master.zip
+unzip master.zip
 # 开始编译
-cd shadowsocks-libev
+cd shadowsocks-libev*
 ./configure --prefix=/usr
 make && make install
 # 准备必须的文件
