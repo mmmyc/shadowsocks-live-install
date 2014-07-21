@@ -5,8 +5,8 @@ cd /tmp
 git clone https://github.com/madeye/shadowsocks-libev.git
 # 开始编译
 cd shadowsocks-libev
-./configure --prefix=/usr
-make && make install
+./configure --prefix=/usr && make
+make install
 # 准备必须的文件
 mkdir -p /etc/shadowsocks
 cp ./debian/shadowsocks.init /etc/init.d/shadowsocks
@@ -30,8 +30,8 @@ wget https://github.com/madeye/shadowsocks-libev/archive/master.zip
 unzip master.zip
 # 开始编译
 cd shadowsocks-libev*
-./configure --prefix=/usr
-make && make install
+./configure --prefix=/usr && make
+make install
 # 准备必须的文件
 mkdir -p /etc/shadowsocks
 cp ./rpm/SOURCES/etc/init.d/shadowsocks /etc/init.d/shadowsocks
