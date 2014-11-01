@@ -1,5 +1,5 @@
 **Debian**
-```
+```sh
 cd /tmp
 # 下载源码
 git clone https://github.com/madeye/shadowsocks-libev.git
@@ -20,7 +20,7 @@ service shadowsocks start
 ```
 
 **CentOS**
-```
+```sh
 cd /tmp
 # 编译环境准备&安装依赖包
 yum install -y gcc automake autoconf libtool make build-essential autoconf libtool
