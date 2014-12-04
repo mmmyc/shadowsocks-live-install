@@ -8,15 +8,15 @@ cd shadowsocks-libev
 ./configure --prefix=/usr && make
 make install
 # 准备必须的文件
-mkdir -p /etc/shadowsocks
-cp ./debian/shadowsocks.init /etc/init.d/shadowsocks
-cp ./debian/shadowsocks.default /etc/default/shadowsocks
-cp ./debian/config.json /etc/shadowsocks/config.json
-chmod +x /etc/init.d/shadowsocks
+mkdir -p /etc/shadowsocks-libev
+cp ./debian/shadowsocks-libev.init /etc/init.d/shadowsocks-libev
+cp ./debian/shadowsocks-libev.default /etc/default/shadowsocks-libev
+cp ./debian/config.json /etc/shadowsocks-libev/config.json
+chmod +x /etc/init.d/shadowsocks-libev
 # 编辑配置文件
-vim /etc/shadowsocks/config.json
+vim /etc/shadowsocks-libev/config.json
 # 启动服务
-service shadowsocks start
+service shadowsocks-libev start
 ```
 
 **CentOS**
@@ -30,15 +30,15 @@ wget https://github.com/madeye/shadowsocks-libev/archive/master.zip
 unzip master.zip
 # 开始编译
 cd shadowsocks-libev*
-./configure && make
+./configure --prefix=/usr && make
 make install
 # 准备必须的文件
-mkdir -p /etc/shadowsocks
-cp ./rpm/SOURCES/etc/init.d/shadowsocks /etc/init.d/shadowsocks
-cp ./debian/config.json /etc/shadowsocks/config.json
-chmod +x /etc/init.d/shadowsocks
+mkdir -p /etc/shadowsocks-libev
+cp ./rpm/SOURCES/etc/init.d/shadowsocks-libev /etc/init.d/shadowsocks-libev
+cp ./debian/config.json /etc/shadowsocks-libev/config.json
+chmod +x /etc/init.d/shadowsocks-libev
 # 编辑配置文件
-vim /etc/shadowsocks/config.json
+vim /etc/shadowsocks-libev/config.json
 # 启动服务
-service shadowsocks start
+service shadowsocks-libev start
 ```
