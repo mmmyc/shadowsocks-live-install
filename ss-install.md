@@ -5,6 +5,7 @@ cd /tmp
 git clone https://github.com/madeye/shadowsocks-libev.git
 # 开始编译
 cd shadowsocks-libev
+./autogen.sh
 ./configure --prefix=/usr && make
 make install
 # 准备必须的文件
@@ -30,6 +31,7 @@ wget https://github.com/madeye/shadowsocks-libev/archive/master.zip
 unzip master.zip
 # 开始编译
 cd shadowsocks-libev*
+./autogen.sh
 ./configure --prefix=/usr && make
 make install
 # 准备必须的文件
