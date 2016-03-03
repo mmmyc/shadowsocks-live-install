@@ -1,8 +1,14 @@
+谢嵩岭
+411522199805162415
+18338635025
+
+cn4t.hxg.cc
+
 **Debian**
 ```sh
 cd /tmp
 # 下载源码
-git clone https://github.com/madeye/shadowsocks-libev.git
+git clone https://github.com/shadowsocks/shadowsocks-libev.git
 # 开始编译
 cd shadowsocks-libev
 ./autogen.sh
@@ -27,7 +33,7 @@ cd /tmp
 yum install -y gcc automake autoconf libtool make build-essential autoconf libtool
 yum install -y curl curl-devel unzip zlib-devel openssl-devel perl perl-devel cpio expat-devel gettext-devel
 # 下载源码
-wget https://github.com/madeye/shadowsocks-libev/archive/master.zip
+wget https://github.com/shadowsocks/shadowsocks-libev/archive/master.zip
 unzip master.zip
 # 开始编译
 cd shadowsocks-libev*
