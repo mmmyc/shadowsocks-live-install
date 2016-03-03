@@ -12,6 +12,7 @@ make install
 mkdir -p /etc/shadowsocks-libev
 cp ./debian/shadowsocks-libev.init /etc/init.d/shadowsocks-libev
 cp ./debian/shadowsocks-libev.default /etc/default/shadowsocks-libev
+cp ./debian/shadowsocks-libev.service /lib/systemd/system/
 cp ./debian/config.json /etc/shadowsocks-libev/config.json
 chmod +x /etc/init.d/shadowsocks-libev
 # 编辑配置文件
