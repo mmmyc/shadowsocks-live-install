@@ -26,7 +26,7 @@ service shadowsocks-libev start
 cd /tmp
 # 编译环境准备&安装依赖包
 yum install -y gcc automake autoconf libtool make build-essential autoconf libtool
-yum install -y curl curl-devel unzip zlib-devel openssl-devel perl perl-devel cpio expat-devel gettext-devel
+yum install -y curl curl-devel unzip zlib-devel openssl-devel perl perl-devel cpio expat-devel gettext-devel asciidoc xmlto
 # 下载源码
 wget https://github.com/shadowsocks/shadowsocks-libev/archive/master.zip
 unzip master.zip
